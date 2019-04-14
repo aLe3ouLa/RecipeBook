@@ -1,6 +1,6 @@
 # Recipebook
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+Recipe book is the walkthrough project of UDEMY course of Maximilian Schwarzmüller.
 
 ## Development server
 
