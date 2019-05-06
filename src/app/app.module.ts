@@ -20,7 +20,6 @@ import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component
 @NgModule({
   declarations: [
     AppComponent,
-    FormsModule,
     HeaderComponent,
     RecipesComponent,
     RecipeListComponent,
@@ -34,6 +33,7 @@ import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [RecipeService, ShoppingListService, ],
