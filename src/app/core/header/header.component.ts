@@ -1,6 +1,6 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
-import { DataStorageService } from '../shared/data-storage.service';
-import { AuthService } from '../auth/auth.service';
+import { DataStorageService } from '../../shared/data-storage.service';
+import { AuthService } from '../../auth/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -8,6 +8,7 @@ import { AuthService } from '../auth/auth.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+
   constructor(private dataStorage: DataStorageService, public authService: AuthService) { }
 
   ngOnInit() {
@@ -29,4 +30,8 @@ export class HeaderComponent implements OnInit {
   onLogOut() {
     this.authService.logout();
   }
+
+  isAuthenticated() {
+    return this.authService.isAuthenticated();
+}
 }
